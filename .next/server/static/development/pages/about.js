@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2521,452 +2521,896 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/contact.js":
-/*!**************************!*\
-  !*** ./pages/contact.js ***!
-  \**************************/
+/***/ "./pages/about.js":
+/*!************************!*\
+  !*** ./pages/about.js ***!
+  \************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return About; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/ducthien/Desktop/Dingo-ProjectReact/pages/contact.js";
+var _jsxFileName = "/Users/ducthien/Desktop/Dingo-ProjectReact/pages/about.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
-
-const Contact = props => {
-  const pageTitle = props.data[0].title;
+function About() {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: pageTitle,
+    title: "About",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 5
     },
-    __self: undefined
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: undefined
+    __self: this
   }, __jsx("section", {
     className: "breadcrumb breadcrumb_bg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 7
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 8
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 9
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "col-lg-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 10
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "breadcrumb_iner text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 11
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "breadcrumb_iner_item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 12
     },
-    __self: undefined
+    __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 13
     },
-    __self: undefined
-  }, pageTitle))))))), __jsx("section", {
-    className: "contact-section section_padding",
+    __self: this
+  }, "About Us"))))))), __jsx("section", {
+    className: "about_part about_bg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "container-fluid",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "row align-items-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "col-sm-4 col-lg-5 offset-lg-1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "about_img",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
-    __self: undefined
-  }, __jsx("div", {
-    className: "container",
+    __self: this
+  }, __jsx("img", {
+    src: "img/about.png",
+    alt: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
     },
-    __self: undefined
-  }, __jsx("div", {
-    className: "d-none d-sm-block mb-5 pb-4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 28
-    },
-    __self: undefined
-  }, __jsx("div", {
-    id: "map",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: undefined
-  }, __jsx("iframe", {
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.3044114869786!2d-118.08506473913808!3d34.06170998398198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d076aaaaaaab%3A0xe015ea1ebe9525c7!2sSneaky!5e0!3m2!1svi!2s!4v1581396411148!5m2!1svi!2s",
-    width: 1000,
-    height: 450,
-    frameBorder: 0,
-    style: {
-      border: 0
-    },
-    allowFullScreen: true,
+    __self: this
+  }))), __jsx("div", {
+    className: "col-sm-8 col-lg-4",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
-    __self: undefined
-  }))), __jsx("div", {
-    className: "row",
+    __self: this
+  }, __jsx("div", {
+    className: "about_text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 31
     },
-    __self: undefined
-  }, __jsx("div", {
-    className: "col-12",
+    __self: this
+  }, __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "Our History"), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, "Where The Food\u2019s As Good As The Root Beer."), __jsx("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, "Satisfying people hunger for simple pleasures"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, "May over was. Be signs two. Spirit. Brought said dry own firmament lesser best sixth deep abundantly bearing, him, gathering you blessed bearing he our position best ticket in month hole deep", " "), __jsx("a", {
+    href: "#",
+    className: "btn_3",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
     },
-    __self: undefined
-  }, __jsx("h2", {
-    className: "contact-title",
+    __self: this
+  }, "Read More ", __jsx("img", {
+    src: "img/icon/left_2.svg",
+    alt: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 42
     },
-    __self: undefined
-  }, "Get in Touch")), __jsx("div", {
-    className: "col-lg-8",
+    __self: this
+  }))))))), __jsx("section", {
+    className: "review_part gray_bg section_padding",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 51
     },
-    __self: undefined
-  }, __jsx("form", {
-    className: "form-contact contact_form",
-    action: "/contact",
-    method: "post",
-    id: "contactForm",
-    noValidate: "novalidate",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
-    className: "row",
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 52
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
-    className: "col-12",
+    className: "row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 53
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
-    className: "form-group",
+    className: "col-xl-5",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
     },
-    __self: undefined
-  }, __jsx("textarea", {
-    className: "form-control w-100",
-    name: "message",
-    id: "message",
-    cols: 30,
-    rows: 9,
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter Message'",
-    placeholder: "Enter Message",
-    defaultValue: "",
+    __self: this
+  }, __jsx("div", {
+    className: "section_tittle",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55
     },
-    __self: undefined
-  }))), __jsx("div", {
-    className: "col-sm-6",
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, "Testimonials"), __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, "Customers Feedback")))), __jsx("div", {
+    className: "row",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "col-lg-11",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "client_review_part owl-carousel",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "client_review_single media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "client_img align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/client/client_1.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "client_review_text media-body",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 68
     },
-    __self: undefined
-  }, __jsx("div", {
-    className: "form-group",
+    __self: this
+  }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 69
     },
-    __self: undefined
-  }, __jsx("input", {
-    className: "form-control",
-    name: "name",
-    id: "name",
-    type: "text",
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter your name'",
-    placeholder: "Enter your name",
+    __self: this
+  }, "Also made from. Give may saying meat there from heaven it lights face had is gathered god dea earth light for life may itself shall whales made they're blessed whales also made from give may saying meat. There from heaven it lights face had amazing place"), __jsx("h4", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 76
     },
-    __self: undefined
-  }))), __jsx("div", {
-    className: "col-sm-6",
+    __self: this
+  }, "Mosan Cameron, ", __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77
+    },
+    __self: this
+  }, "Executive of fedex")))), __jsx("div", {
+    className: "client_review_single media",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 81
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
-    className: "form-group",
+    className: "client_img align-self-center",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 82
     },
-    __self: undefined
-  }, __jsx("input", {
-    className: "form-control",
-    name: "email",
-    id: "email",
-    type: "email",
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter email address'",
-    placeholder: "Enter email address",
+    __self: this
+  }, __jsx("img", {
+    src: "img/client/client_1.png ",
+    alt: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 83
     },
-    __self: undefined
-  }))), __jsx("div", {
-    className: "col-12",
+    __self: this
+  })), __jsx("div", {
+    className: "client_review_text media-body",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }, "Also made from. Give may saying meat there from heaven it lights face had is gathered god dea earth light for life may itself shall whales made they're blessed whales also made from give may saying meat. There from heaven it lights face had amazing place"), __jsx("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: this
+  }, "Mosan Cameron, ", __jsx("span", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 94
     },
-    __self: undefined
+    __self: this
+  }, "Executive of fedex")))), __jsx("div", {
+    className: "client_review_single media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
   }, __jsx("div", {
-    className: "form-group",
+    className: "client_img align-self-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 99
     },
-    __self: undefined
-  }, __jsx("input", {
-    className: "form-control",
-    name: "subject",
-    id: "subject",
-    type: "text",
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter Subject'",
-    placeholder: "Enter Subject",
+    __self: this
+  }, __jsx("img", {
+    src: "img/client/client_1.png",
+    alt: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 100
     },
-    __self: undefined
-  })))), __jsx("div", {
-    className: "form-group mt-3",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 108
-    },
-    __self: undefined
-  }, __jsx("button", {
-    type: "submit",
-    className: "button button-contactForm btn_4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 109
-    },
-    __self: undefined
-  }, "Send Message")))), __jsx("div", {
-    className: "col-lg-4",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 118
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "media contact-info",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 119
-    },
-    __self: undefined
-  }, __jsx("span", {
-    className: "contact-info__icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 120
-    },
-    __self: undefined
-  }, __jsx("i", {
-    className: "ti-home",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 121
-    },
-    __self: undefined
+    __self: this
   })), __jsx("div", {
-    className: "media-body",
+    className: "client_review_text media-body",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103
+    },
+    __self: this
+  }, "Also made from. Give may saying meat there from heaven it lights face had is gathered god dea earth light for life may itself shall whales made they're blessed whales also made from give may saying meat. There from heaven it lights face had amazing place"), __jsx("h4", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
+    },
+    __self: this
+  }, "Mosan Cameron, ", __jsx("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111
+    },
+    __self: this
+  }, "Executive of fedex"))))))))), __jsx("section", {
+    className: "chefs_part blog_item_section section_padding",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "container",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 123
     },
-    __self: undefined
-  }, __jsx("h3", {
+    __self: this
+  }, __jsx("div", {
+    className: "row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 124
     },
-    __self: undefined
-  }, "Buttonwood, California."), __jsx("p", {
+    __self: this
+  }, __jsx("div", {
+    className: "col-xl-5",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 125
     },
-    __self: undefined
-  }, "Rosemead, CA 91770"))), __jsx("div", {
-    className: "media contact-info",
+    __self: this
+  }, __jsx("div", {
+    className: "section_tittle",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127
+    },
+    __self: this
+  }, "Team Member"), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 128
     },
-    __self: undefined
-  }, __jsx("span", {
-    className: "contact-info__icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 129
-    },
-    __self: undefined
-  }, __jsx("i", {
-    className: "ti-tablet",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 130
-    },
-    __self: undefined
-  })), __jsx("div", {
-    className: "media-body",
+    __self: this
+  }, "Our Experience Chefs")))), __jsx("div", {
+    className: "row",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 132
     },
-    __self: undefined
-  }, __jsx("h3", {
+    __self: this
+  }, __jsx("div", {
+    className: "col-sm-6 col-lg-4",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 133
     },
-    __self: undefined
-  }, "00 (440) 9865 562"), __jsx("p", {
+    __self: this
+  }, __jsx("div", {
+    className: "single_blog_item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 134
     },
-    __self: undefined
-  }, "Mon to Fri 9am to 6pm"))), __jsx("div", {
-    className: "media contact-info",
+    __self: this
+  }, __jsx("div", {
+    className: "single_blog_img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 135
     },
-    __self: undefined
-  }, __jsx("span", {
-    className: "contact-info__icon",
+    __self: this
+  }, __jsx("img", {
+    src: "img/team/chefs_1.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "single_blog_text text-center",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 138
     },
-    __self: undefined
-  }, __jsx("i", {
-    className: "ti-email",
+    __self: this
+  }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 139
     },
-    __self: undefined
-  })), __jsx("div", {
-    className: "media-body",
+    __self: this
+  }, "Adam Billiard"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140
+    },
+    __self: this
+  }, "Chef Master"), __jsx("div", {
+    className: "social_icon",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 141
     },
-    __self: undefined
-  }, __jsx("h3", {
+    __self: this
+  }, __jsx("a", {
+    href: "#",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 142
     },
-    __self: undefined
-  }, "support@colorlib.com"), __jsx("p", {
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-facebook",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 144
     },
-    __self: undefined
-  }, "Send us your query anytime!")))))))));
-};
-
-Contact.getInitialProps = async function () {
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("http://localhost:4000/contact/");
-  const data = await res.json();
-  return {
-    data
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Contact);
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 146
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-twitter-alt",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 150
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-instagram",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 152
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 154
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-skype",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 156
+    },
+    __self: this
+  }), " "))))), __jsx("div", {
+    className: "col-sm-6 col-lg-4",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 162
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_blog_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 163
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_blog_img",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 164
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/team/chefs_2.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 165
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "single_blog_text text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 167
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 168
+    },
+    __self: this
+  }, "Fred Macyard"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 169
+    },
+    __self: this
+  }, "Chef Master"), __jsx("div", {
+    className: "social_icon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 170
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 171
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-facebook",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 173
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 175
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-twitter-alt",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 177
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 179
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-instagram",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 181
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 183
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-skype",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 185
+    },
+    __self: this
+  }), " "))))), __jsx("div", {
+    className: "col-sm-6 col-lg-4",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 191
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_blog_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 192
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_blog_img",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 193
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/team/chefs_3.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 194
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "single_blog_text text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 196
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 197
+    },
+    __self: this
+  }, "Justin Stuard"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 198
+    },
+    __self: this
+  }, "Chef Master"), __jsx("div", {
+    className: "social_icon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 199
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 200
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-facebook",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 202
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 204
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-twitter-alt",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 206
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 208
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-instagram",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 210
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 212
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-skype",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 214
+    },
+    __self: this
+  }), " "))))), __jsx("div", {
+    className: "col-sm-6 col-lg-4 d-none d-sm-block d-lg-none",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 220
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_blog_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 221
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_blog_img",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 222
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/team/chefs_1.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 223
+    },
+    __self: this
+  })), __jsx("div", {
+    className: "single_blog_text text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 225
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 226
+    },
+    __self: this
+  }, "Justin Stuard"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 227
+    },
+    __self: this
+  }, "Chef Master"), __jsx("div", {
+    className: "social_icon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 228
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 229
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-facebook",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 231
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 233
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-twitter-alt",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 235
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 237
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-instagram",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 239
+    },
+    __self: this
+  }), " "), __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 241
+    },
+    __self: this
+  }, " ", __jsx("i", {
+    className: "ti-skype",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 243
+    },
+    __self: this
+  }), " ")))))))));
+}
 
 /***/ }),
 
-/***/ 5:
-/*!********************************!*\
-  !*** multi ./pages/contact.js ***!
-  \********************************/
+/***/ 9:
+/*!******************************!*\
+  !*** multi ./pages/about.js ***!
+  \******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/ducthien/Desktop/Dingo-ProjectReact/pages/contact.js */"./pages/contact.js");
+module.exports = __webpack_require__(/*! /Users/ducthien/Desktop/Dingo-ProjectReact/pages/about.js */"./pages/about.js");
 
 
 /***/ }),
@@ -3023,17 +3467,6 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
-
-/***/ }),
-
-/***/ "isomorphic-unfetch":
-/*!*************************************!*\
-  !*** external "isomorphic-unfetch" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
@@ -3115,4 +3548,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=contact.js.map
+//# sourceMappingURL=about.js.map

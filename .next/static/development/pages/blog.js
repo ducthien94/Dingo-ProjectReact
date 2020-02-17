@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/contact.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/blog.js"],{
 
 /***/ "./components/Footer.js":
 /*!******************************!*\
@@ -5527,18 +5527,6 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/polyfills/fetch/index.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/next/dist/build/polyfills/fetch/index.js ***!
-  \***************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* globals self */var fetch=self.fetch.bind(self);module.exports=fetch;module.exports.default=module.exports;
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
 /*!***********************************************************************************************************************!*\
   !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_ef0ff7c60362f24a921f ***!
@@ -5562,21 +5550,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fcontact.js!./":
-/*!*******************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fcontact.js ***!
-  \*******************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fblog.js!./":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fblog.js ***!
+  \*************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/contact", function() {
-      var mod = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/blog", function() {
+      var mod = __webpack_require__(/*! ./pages/blog.js */ "./pages/blog.js")
       if(true) {
-        module.hot.accept(/*! ./pages/contact.js */ "./pages/contact.js", function() {
-          if(!next.router.components["/contact"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/contact.js */ "./pages/contact.js")
-          next.router.update("/contact", updatedPage)
+        module.hot.accept(/*! ./pages/blog.js */ "./pages/blog.js", function() {
+          if(!next.router.components["/blog"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/blog.js */ "./pages/blog.js")
+          next.router.update("/blog", updatedPage)
         })
       }
       return mod
@@ -11035,475 +11023,1566 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./pages/contact.js":
-/*!**************************!*\
-  !*** ./pages/contact.js ***!
-  \**************************/
+/***/ "./pages/blog.js":
+/*!***********************!*\
+  !*** ./pages/blog.js ***!
+  \***********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
-/* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/next/dist/build/polyfills/fetch/index.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Blog; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
+var _jsxFileName = "/Users/ducthien/Desktop/Dingo-ProjectReact/pages/blog.js";
 
-var _jsxFileName = "/Users/ducthien/Desktop/Dingo-ProjectReact/pages/contact.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
-
-
-
-var Contact = function Contact(props) {
-  var pageTitle = props.data[0].title;
-  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    title: pageTitle,
+function Blog() {
+  return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    title: "Blog",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 5
     },
     __self: this
   }, __jsx("section", {
     className: "breadcrumb breadcrumb_bg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 7
     },
     __self: this
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 8
     },
     __self: this
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 9
     },
     __self: this
   }, __jsx("div", {
     className: "col-lg-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 10
     },
     __self: this
   }, __jsx("div", {
     className: "breadcrumb_iner text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 11
     },
     __self: this
   }, __jsx("div", {
     className: "breadcrumb_iner_item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 12
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 13
     },
     __self: this
-  }, pageTitle))))))), __jsx("section", {
-    className: "contact-section section_padding",
+  }, "Our Blog"))))))), __jsx("section", {
+    className: "blog_area section_padding",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 22
     },
     __self: this
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "row",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "col-lg-8 mb-5 mb-lg-0",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "blog_left_sidebar",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx("article", {
+    className: "blog_item",
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 27
     },
     __self: this
   }, __jsx("div", {
-    className: "d-none d-sm-block mb-5 pb-4",
+    className: "blog_item_img",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
     __self: this
-  }, __jsx("div", {
-    id: "map",
+  }, __jsx("img", {
+    className: "card-img rounded-0",
+    src: "img/blog/single_blog_1.png",
+    alt: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
     __self: this
-  }, __jsx("iframe", {
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.3044114869786!2d-118.08506473913808!3d34.06170998398198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d076aaaaaaab%3A0xe015ea1ebe9525c7!2sSneaky!5e0!3m2!1svi!2s!4v1581396411148!5m2!1svi!2s",
-    width: 1000,
-    height: 450,
-    frameBorder: 0,
-    style: {
-      border: 0
-    },
-    allowFullScreen: true,
+  }), __jsx("a", {
+    href: "#",
+    className: "blog_item_date",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 34
     },
     __self: this
-  }))), __jsx("div", {
-    className: "row",
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: this
+  }, "15"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, "Jan"))), __jsx("div", {
+    className: "blog_details",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "d-inline-block",
+    href: "single-blog.html",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 40
     },
     __self: this
-  }, __jsx("div", {
-    className: "col-12",
+  }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 41
     },
     __self: this
-  }, __jsx("h2", {
-    className: "contact-title",
+  }, "Google inks pact for new 35-storey office")), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 43
     },
     __self: this
-  }, "Get in Touch")), __jsx("div", {
-    className: "col-lg-8",
+  }, "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."), __jsx("ul", {
+    className: "blog-info-link",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 48
     },
     __self: this
-  }, __jsx("form", {
-    className: "form-contact contact_form",
-    action: "/contact",
-    method: "post",
-    id: "contactForm",
-    noValidate: "novalidate",
+  }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 49
     },
     __self: this
-  }, __jsx("div", {
-    className: "row",
+  }, __jsx("a", {
+    href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 50
     },
     __self: this
-  }, __jsx("div", {
-    className: "col-12",
+  }, __jsx("i", {
+    className: "far fa-user",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 51
     },
     __self: this
-  }, __jsx("div", {
-    className: "form-group",
+  }), " Travel, Lifestyle")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 54
     },
     __self: this
-  }, __jsx("textarea", {
-    className: "form-control w-100",
-    name: "message",
-    id: "message",
-    cols: 30,
-    rows: 9,
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter Message'",
-    placeholder: "Enter Message",
-    defaultValue: "",
+  }, __jsx("a", {
+    href: "#",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 55
     },
     __self: this
-  }))), __jsx("div", {
-    className: "col-sm-6",
+  }, __jsx("i", {
+    className: "far fa-comments",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68
+      lineNumber: 56
+    },
+    __self: this
+  }), " 03 Comments"))))), __jsx("article", {
+    className: "blog_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
     },
     __self: this
   }, __jsx("div", {
-    className: "form-group",
+    className: "blog_item_img",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "card-img rounded-0",
+    src: "img/blog/single_blog_2.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: this
+  }), __jsx("a", {
+    href: "#",
+    className: "blog_item_date",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 69
     },
     __self: this
-  }, __jsx("input", {
-    className: "form-control",
-    name: "name",
-    id: "name",
-    type: "text",
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter your name'",
-    placeholder: "Enter your name",
+  }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 70
     },
     __self: this
-  }))), __jsx("div", {
-    className: "col-sm-6",
+  }, "15"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 71
     },
     __self: this
-  }, __jsx("div", {
-    className: "form-group",
+  }, "Jan"))), __jsx("div", {
+    className: "blog_details",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 74
     },
     __self: this
-  }, __jsx("input", {
-    className: "form-control",
-    name: "email",
-    id: "email",
-    type: "email",
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter email address'",
-    placeholder: "Enter email address",
+  }, __jsx("a", {
+    className: "d-inline-block",
+    href: "single-blog.html",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  }, "Google inks pact for new 35-storey office")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78
+    },
+    __self: this
+  }, "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."), __jsx("ul", {
+    className: "blog-info-link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 83
     },
     __self: this
-  }))), __jsx("div", {
-    className: "col-12",
+  }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 84
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "far fa-user",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 86
+    },
+    __self: this
+  }), " Travel, Lifestyle")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "far fa-comments",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 91
+    },
+    __self: this
+  }), " 03 Comments"))))), __jsx("article", {
+    className: "blog_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
     },
     __self: this
   }, __jsx("div", {
-    className: "form-group",
+    className: "blog_item_img",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 98
     },
     __self: this
-  }, __jsx("input", {
-    className: "form-control",
-    name: "subject",
-    id: "subject",
-    type: "text",
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter Subject'",
-    placeholder: "Enter Subject",
+  }, __jsx("img", {
+    className: "card-img rounded-0",
+    src: "img/blog/single_blog_3.png",
+    alt: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 99
     },
     __self: this
-  })))), __jsx("div", {
-    className: "form-group mt-3",
+  }), __jsx("a", {
+    href: "#",
+    className: "blog_item_date",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 104
     },
     __self: this
-  }, __jsx("button", {
-    type: "submit",
-    className: "button button-contactForm btn_4",
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 105
+    },
+    __self: this
+  }, "15"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 106
+    },
+    __self: this
+  }, "Jan"))), __jsx("div", {
+    className: "blog_details",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 109
     },
     __self: this
-  }, "Send Message")))), __jsx("div", {
-    className: "col-lg-4",
+  }, __jsx("a", {
+    className: "d-inline-block",
+    href: "single-blog.html",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
+    },
+    __self: this
+  }, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111
+    },
+    __self: this
+  }, "Google inks pact for new 35-storey office")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: this
+  }, "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."), __jsx("ul", {
+    className: "blog-info-link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 118
     },
     __self: this
-  }, __jsx("div", {
-    className: "media contact-info",
+  }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 119
     },
     __self: this
-  }, __jsx("span", {
-    className: "contact-info__icon",
+  }, __jsx("a", {
+    href: "#",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 120
     },
     __self: this
   }, __jsx("i", {
-    className: "ti-home",
+    className: "far fa-user",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 121
     },
     __self: this
-  })), __jsx("div", {
-    className: "media-body",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 123
-    },
-    __self: this
-  }, __jsx("h3", {
+  }), " Travel, Lifestyle")), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 124
     },
     __self: this
-  }, "Buttonwood, California."), __jsx("p", {
+  }, __jsx("a", {
+    href: "#",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 125
     },
     __self: this
-  }, "Rosemead, CA 91770"))), __jsx("div", {
-    className: "media contact-info",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 128
-    },
-    __self: this
-  }, __jsx("span", {
-    className: "contact-info__icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 129
-    },
-    __self: this
   }, __jsx("i", {
-    className: "ti-tablet",
+    className: "far fa-comments",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 126
     },
     __self: this
-  })), __jsx("div", {
-    className: "media-body",
+  }), " 03 Comments"))))), __jsx("article", {
+    className: "blog_item",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 132
     },
     __self: this
-  }, __jsx("h3", {
+  }, __jsx("div", {
+    className: "blog_item_img",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 133
     },
     __self: this
-  }, "00 (440) 9865 562"), __jsx("p", {
+  }, __jsx("img", {
+    className: "card-img rounded-0",
+    src: "img/blog/single_blog_4.png",
+    alt: true,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 134
     },
     __self: this
-  }, "Mon to Fri 9am to 6pm"))), __jsx("div", {
-    className: "media contact-info",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 137
-    },
-    __self: this
-  }, __jsx("span", {
-    className: "contact-info__icon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 138
-    },
-    __self: this
-  }, __jsx("i", {
-    className: "ti-email",
+  }), __jsx("a", {
+    href: "#",
+    className: "blog_item_date",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 139
     },
     __self: this
-  })), __jsx("div", {
-    className: "media-body",
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140
+    },
+    __self: this
+  }, "15"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 141
     },
     __self: this
+  }, "Jan"))), __jsx("div", {
+    className: "blog_details",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "d-inline-block",
+    href: "single-blog.html",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 145
+    },
+    __self: this
+  }, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 146
+    },
+    __self: this
+  }, "Google inks pact for new 35-storey office")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148
+    },
+    __self: this
+  }, "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."), __jsx("ul", {
+    className: "blog-info-link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 153
+    },
+    __self: this
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 154
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 155
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "far fa-user",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 156
+    },
+    __self: this
+  }), " Travel, Lifestyle")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 160
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "far fa-comments",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 161
+    },
+    __self: this
+  }), " 03 Comments"))))), __jsx("article", {
+    className: "blog_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 167
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "blog_item_img",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 168
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "card-img rounded-0",
+    src: "img/blog/single_blog_5.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 169
+    },
+    __self: this
+  }), __jsx("a", {
+    href: "#",
+    className: "blog_item_date",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 174
+    },
+    __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 175
     },
     __self: this
-  }, "support@colorlib.com"), __jsx("p", {
+  }, "15"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 176
     },
     __self: this
-  }, "Send us your query anytime!")))))))));
-};
-
-Contact.getInitialProps = function _callee() {
-  var res, data;
-  return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.async(function _callee$(_context) {
-    while (1) {
-      switch (_context.prev = _context.next) {
-        case 0:
-          _context.next = 2;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("http://localhost:4000/contact/"));
-
-        case 2:
-          res = _context.sent;
-          _context.next = 5;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
-
-        case 5:
-          data = _context.sent;
-          return _context.abrupt("return", {
-            data: data
-          });
-
-        case 7:
-        case "end":
-          return _context.stop();
-      }
-    }
-  });
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Contact);
+  }, "Jan"))), __jsx("div", {
+    className: "blog_details",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 179
+    },
+    __self: this
+  }, __jsx("a", {
+    className: "d-inline-block",
+    href: "single-blog.html",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 180
+    },
+    __self: this
+  }, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 181
+    },
+    __self: this
+  }, "Google inks pact for new 35-storey office")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 183
+    },
+    __self: this
+  }, "That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying."), __jsx("ul", {
+    className: "blog-info-link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 188
+    },
+    __self: this
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 189
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 190
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "far fa-user",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 191
+    },
+    __self: this
+  }), " Travel, Lifestyle")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 194
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 195
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "far fa-comments",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 196
+    },
+    __self: this
+  }), " 03 Comments"))))), __jsx("nav", {
+    className: "blog-pagination justify-content-center d-flex",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 202
+    },
+    __self: this
+  }, __jsx("ul", {
+    className: "pagination",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 203
+    },
+    __self: this
+  }, __jsx("li", {
+    className: "page-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 204
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: "page-link",
+    "aria-label": "Previous",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 205
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "ti-angle-left",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 206
+    },
+    __self: this
+  }))), __jsx("li", {
+    className: "page-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 209
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: "page-link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 210
+    },
+    __self: this
+  }, "1")), __jsx("li", {
+    className: "page-item active",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 214
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: "page-link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 215
+    },
+    __self: this
+  }, "2")), __jsx("li", {
+    className: "page-item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 219
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: "page-link",
+    "aria-label": "Next",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 220
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "ti-angle-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 221
+    },
+    __self: this
+  }))))))), __jsx("div", {
+    className: "col-lg-4",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 228
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "blog_right_sidebar",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 229
+    },
+    __self: this
+  }, __jsx("aside", {
+    className: "single_sidebar_widget search_widget",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 230
+    },
+    __self: this
+  }, __jsx("form", {
+    action: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 231
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "form-group",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 232
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "input-group mb-3",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 233
+    },
+    __self: this
+  }, __jsx("input", {
+    type: "text",
+    className: "form-control",
+    placeholder: "Search Keyword",
+    onfocus: "this.placeholder = ''",
+    onblur: "this.placeholder = 'Search Keyword'",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 234
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "input-group-append",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 241
+    },
+    __self: this
+  }, __jsx("button", {
+    className: "btn",
+    type: "button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 242
+    },
+    __self: this
+  }, __jsx("i", {
+    className: "ti-search",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 243
+    },
+    __self: this
+  }))))), __jsx("button", {
+    className: "button rounded-0 primary-bg text-white w-100 btn_4",
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 248
+    },
+    __self: this
+  }, "Search"))), __jsx("aside", {
+    className: "single_sidebar_widget post_category_widget",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 256
+    },
+    __self: this
+  }, __jsx("h4", {
+    className: "widget_title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 257
+    },
+    __self: this
+  }, "Category"), __jsx("ul", {
+    className: "list cat-list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 258
+    },
+    __self: this
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 259
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: "d-flex",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 260
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 261
+    },
+    __self: this
+  }, "Resaurant food"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 262
+    },
+    __self: this
+  }, "(37)"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 265
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: "d-flex",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 266
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 267
+    },
+    __self: this
+  }, "Travel news"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 268
+    },
+    __self: this
+  }, "(10)"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 271
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: "d-flex",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 272
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 273
+    },
+    __self: this
+  }, "Modern technology"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 274
+    },
+    __self: this
+  }, "(03)"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 277
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: "d-flex",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 278
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 279
+    },
+    __self: this
+  }, "Product"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 280
+    },
+    __self: this
+  }, "(11)"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 283
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: "d-flex",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 284
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 285
+    },
+    __self: this
+  }, "Inspiration"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 286
+    },
+    __self: this
+  }, "21"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 289
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    className: "d-flex",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 290
+    },
+    __self: this
+  }, __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 291
+    },
+    __self: this
+  }, "Health Care (21)"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 292
+    },
+    __self: this
+  }, "09"))))), __jsx("aside", {
+    className: "single_sidebar_widget popular_post_widget",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 297
+    },
+    __self: this
+  }, __jsx("h3", {
+    className: "widget_title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 298
+    },
+    __self: this
+  }, "Recent Post"), __jsx("div", {
+    className: "media post_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 299
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/post/post_1.png",
+    alt: "post",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 300
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 301
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "single-blog.html",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 302
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 303
+    },
+    __self: this
+  }, "From life was you fish...")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 305
+    },
+    __self: this
+  }, "January 12, 2019"))), __jsx("div", {
+    className: "media post_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 308
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/post/post_2.png",
+    alt: "post",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 309
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 310
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "single-blog.html",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 311
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 312
+    },
+    __self: this
+  }, "The Amazing Hubble")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 314
+    },
+    __self: this
+  }, "02 Hours ago"))), __jsx("div", {
+    className: "media post_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 317
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/post/post_3.png",
+    alt: "post",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 318
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 319
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "single-blog.html",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 320
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 321
+    },
+    __self: this
+  }, "Astronomy Or Astrology")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 323
+    },
+    __self: this
+  }, "03 Hours ago"))), __jsx("div", {
+    className: "media post_item",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 326
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/post/post_4.png",
+    alt: "post",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 327
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 328
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "single-blog.html",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 329
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 330
+    },
+    __self: this
+  }, "Asteroids telescope")), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 332
+    },
+    __self: this
+  }, "01 Hours ago")))), __jsx("aside", {
+    className: "single_sidebar_widget tag_cloud_widget",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 336
+    },
+    __self: this
+  }, __jsx("h4", {
+    className: "widget_title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 337
+    },
+    __self: this
+  }, "Tag Clouds"), __jsx("ul", {
+    className: "list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 338
+    },
+    __self: this
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 339
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 340
+    },
+    __self: this
+  }, "project")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 342
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 343
+    },
+    __self: this
+  }, "love")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 345
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 346
+    },
+    __self: this
+  }, "technology")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 348
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 349
+    },
+    __self: this
+  }, "travel")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 351
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 352
+    },
+    __self: this
+  }, "restaurant")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 354
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 355
+    },
+    __self: this
+  }, "life style")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 357
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 358
+    },
+    __self: this
+  }, "design")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 360
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 361
+    },
+    __self: this
+  }, "illustration")))), __jsx("aside", {
+    className: "single_sidebar_widget instagram_feeds",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 365
+    },
+    __self: this
+  }, __jsx("h4", {
+    className: "widget_title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 366
+    },
+    __self: this
+  }, "Instagram Feeds"), __jsx("ul", {
+    className: "instagram_row flex-wrap",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 367
+    },
+    __self: this
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 368
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 369
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "img-fluid",
+    src: "img/post/post_5.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 370
+    },
+    __self: this
+  }))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 377
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 378
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "img-fluid",
+    src: "img/post/post_6.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 379
+    },
+    __self: this
+  }))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 386
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 387
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "img-fluid",
+    src: "img/post/post_7.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 388
+    },
+    __self: this
+  }))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 395
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 396
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "img-fluid",
+    src: "img/post/post_8.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 397
+    },
+    __self: this
+  }))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 404
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 405
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "img-fluid",
+    src: "img/post/post_9.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 406
+    },
+    __self: this
+  }))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 413
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 414
+    },
+    __self: this
+  }, __jsx("img", {
+    className: "img-fluid",
+    src: "img/post/post_10.png",
+    alt: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 415
+    },
+    __self: this
+  }))))), __jsx("aside", {
+    className: "single_sidebar_widget newsletter_widget",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 424
+    },
+    __self: this
+  }, __jsx("h4", {
+    className: "widget_title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 425
+    },
+    __self: this
+  }, "Newsletter"), __jsx("form", {
+    action: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 426
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "form-group",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 427
+    },
+    __self: this
+  }, __jsx("input", {
+    type: "email",
+    className: "form-control",
+    onfocus: "this.placeholder = ''",
+    onblur: "this.placeholder = 'Enter email'",
+    placeholder: "Enter email",
+    required: true,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 428
+    },
+    __self: this
+  })), __jsx("button", {
+    className: "button rounded-0 primary-bg text-white w-100 btn_4",
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 437
+    },
+    __self: this
+  }, "Subscribe")))))))));
+}
 
 /***/ }),
 
-/***/ 3:
-/*!***********************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fcontact.js ***!
-  \***********************************************************************************************************************************************/
+/***/ 2:
+/*!*****************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fblog.js ***!
+  \*****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fcontact.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fcontact&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fcontact.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fblog&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fblog.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fblog&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fblog.js!./");
 
 
 /***/ }),
@@ -11519,5 +12598,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
-//# sourceMappingURL=contact.js.map
+},[[2,"static/runtime/webpack.js"]]]);
+//# sourceMappingURL=blog.js.map

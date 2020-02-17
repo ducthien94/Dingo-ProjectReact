@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2521,452 +2521,1720 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 /***/ }),
 
-/***/ "./pages/contact.js":
-/*!**************************!*\
-  !*** ./pages/contact.js ***!
-  \**************************/
+/***/ "./pages/menu.js":
+/*!***********************!*\
+  !*** ./pages/menu.js ***!
+  \***********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Menu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Layout */ "./components/Layout.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "/Users/ducthien/Desktop/Dingo-ProjectReact/pages/contact.js";
+var _jsxFileName = "/Users/ducthien/Desktop/Dingo-ProjectReact/pages/menu.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-
-
-const Contact = props => {
-  const pageTitle = props.data[0].title;
+function Menu() {
   return __jsx(_components_Layout__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    title: pageTitle,
+    title: "Menu",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 5
     },
-    __self: undefined
-  }, __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: undefined
+    __self: this
   }, __jsx("section", {
     className: "breadcrumb breadcrumb_bg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 7
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 8
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 9
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "col-lg-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 10
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "breadcrumb_iner text-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 11
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "breadcrumb_iner_item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 12
     },
-    __self: undefined
+    __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 13
     },
-    __self: undefined
-  }, pageTitle))))))), __jsx("section", {
-    className: "contact-section section_padding",
+    __self: this
+  }, "Food Menu"))))))), __jsx("section", {
+    className: "food_menu gray_bg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 23
     },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "row justify-content-between",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "col-lg-5",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "section_tittle",
+    __source: {
+      fileName: _jsxFileName,
       lineNumber: 27
     },
-    __self: undefined
-  }, __jsx("div", {
-    className: "d-none d-sm-block mb-5 pb-4",
+    __self: this
+  }, __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 28
     },
-    __self: undefined
-  }, __jsx("div", {
-    id: "map",
+    __self: this
+  }, "Popular Menu"), __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 29
     },
-    __self: undefined
-  }, __jsx("iframe", {
-    src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.3044114869786!2d-118.08506473913808!3d34.06170998398198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2d076aaaaaaab%3A0xe015ea1ebe9525c7!2sSneaky!5e0!3m2!1svi!2s!4v1581396411148!5m2!1svi!2s",
-    width: 1000,
-    height: 450,
-    frameBorder: 0,
-    style: {
-      border: 0
-    },
-    allowFullScreen: true,
+    __self: this
+  }, "Delicious Food Menu"))), __jsx("div", {
+    className: "col-lg-6",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 32
     },
-    __self: undefined
-  }))), __jsx("div", {
-    className: "row",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: undefined
+    __self: this
   }, __jsx("div", {
-    className: "col-12",
+    className: "nav nav-tabs food_menu_nav",
+    id: "myTab",
+    role: "tablist",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 33
     },
-    __self: undefined
-  }, __jsx("h2", {
-    className: "contact-title",
+    __self: this
+  }, __jsx("a", {
+    className: "active",
+    id: "Special-tab",
+    "data-toggle": "tab",
+    href: "#Special",
+    role: "tab",
+    "aria-controls": "Special",
+    "aria-selected": "false",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 38
     },
-    __self: undefined
-  }, "Get in Touch")), __jsx("div", {
-    className: "col-lg-8",
+    __self: this
+  }, "Special ", __jsx("img", {
+    src: "img/icon/play.svg",
+    alt: "play",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 47
     },
-    __self: undefined
-  }, __jsx("form", {
-    className: "form-contact contact_form",
-    action: "/contact",
-    method: "post",
-    id: "contactForm",
-    noValidate: "novalidate",
+    __self: this
+  })), __jsx("a", {
+    id: "Breakfast-tab",
+    "data-toggle": "tab",
+    href: "#Breakfast",
+    role: "tab",
+    "aria-controls": "Breakfast",
+    "aria-selected": "false",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 49
     },
-    __self: undefined
-  }, __jsx("div", {
-    className: "row",
+    __self: this
+  }, "Breakfast ", __jsx("img", {
+    src: "img/icon/play.svg",
+    alt: "play",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 57
     },
-    __self: undefined
-  }, __jsx("div", {
-    className: "col-12",
+    __self: this
+  })), __jsx("a", {
+    id: "Launch-tab",
+    "data-toggle": "tab",
+    href: "#Launch",
+    role: "tab",
+    "aria-controls": "Launch",
+    "aria-selected": "false",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 59
     },
-    __self: undefined
-  }, __jsx("div", {
-    className: "form-group",
+    __self: this
+  }, "Launch ", __jsx("img", {
+    src: "img/icon/play.svg",
+    alt: "play",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 67
     },
-    __self: undefined
-  }, __jsx("textarea", {
-    className: "form-control w-100",
-    name: "message",
-    id: "message",
-    cols: 30,
-    rows: 9,
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter Message'",
-    placeholder: "Enter Message",
-    defaultValue: "",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: undefined
-  }))), __jsx("div", {
-    className: "col-sm-6",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "form-group",
+    __self: this
+  })), __jsx("a", {
+    id: "Dinner-tab",
+    "data-toggle": "tab",
+    href: "#Dinner",
+    role: "tab",
+    "aria-controls": "Dinner",
+    "aria-selected": "false",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 69
     },
-    __self: undefined
-  }, __jsx("input", {
-    className: "form-control",
-    name: "name",
-    id: "name",
-    type: "text",
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter your name'",
-    placeholder: "Enter your name",
+    __self: this
+  }, "Dinner ", __jsx("img", {
+    src: "img/icon/play.svg",
+    alt: "play",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 77
     },
-    __self: undefined
-  }))), __jsx("div", {
-    className: "col-sm-6",
+    __self: this
+  }), " "), __jsx("a", {
+    id: "Sneaks-tab",
+    "data-toggle": "tab",
+    href: "#Sneaks",
+    role: "tab",
+    "aria-controls": "Sneaks",
+    "aria-selected": "false",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 79
     },
-    __self: undefined
-  }, __jsx("div", {
-    className: "form-group",
+    __self: this
+  }, "Sneaks ", __jsx("img", {
+    src: "img/icon/play.svg",
+    alt: "play",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 87
     },
-    __self: undefined
-  }, __jsx("input", {
-    className: "form-control",
-    name: "email",
-    id: "email",
-    type: "email",
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter email address'",
-    placeholder: "Enter email address",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83
-    },
-    __self: undefined
-  }))), __jsx("div", {
-    className: "col-12",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 94
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "form-group",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95
-    },
-    __self: undefined
-  }, __jsx("input", {
-    className: "form-control",
-    name: "subject",
-    id: "subject",
-    type: "text",
-    onfocus: "this.placeholder = ''",
-    onblur: "this.placeholder = 'Enter Subject'",
-    placeholder: "Enter Subject",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: undefined
+    __self: this
   })))), __jsx("div", {
-    className: "form-group mt-3",
+    className: "col-lg-12",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 91
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "tab-content",
+    id: "myTabContent",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "tab-pane fade show active single-member",
+    id: "Special",
+    role: "tabpanel",
+    "aria-labelledby": "Special-tab",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "row",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "col-sm-6 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_1.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107
+    },
+    __self: this
+  }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 108
     },
-    __self: undefined
-  }, __jsx("button", {
-    type: "submit",
-    className: "button button-contactForm btn_4",
+    __self: this
+  }, "Pork Sandwich"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 109
     },
-    __self: undefined
-  }, "Send Message")))), __jsx("div", {
-    className: "col-lg-4",
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 110
     },
-    __self: undefined
-  }, __jsx("div", {
-    className: "media contact-info",
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_2.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 119
     },
-    __self: undefined
-  }, __jsx("span", {
-    className: "contact-info__icon",
+    __self: this
+  }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 120
     },
-    __self: undefined
-  }, __jsx("i", {
-    className: "ti-home",
+    __self: this
+  }, "Roasted Marrow"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 121
     },
-    __self: undefined
-  })), __jsx("div", {
-    className: "media-body",
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123
+      lineNumber: 122
     },
-    __self: undefined
-  }, __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 124
-    },
-    __self: undefined
-  }, "Buttonwood, California."), __jsx("p", {
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 125
     },
-    __self: undefined
-  }, "Rosemead, CA 91770"))), __jsx("div", {
-    className: "media contact-info",
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_3.png",
+    className: "mr-3",
+    alt: "...",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 126
     },
-    __self: undefined
-  }, __jsx("span", {
-    className: "contact-info__icon",
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 131
     },
-    __self: undefined
-  }, __jsx("i", {
-    className: "ti-tablet",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 130
-    },
-    __self: undefined
-  })), __jsx("div", {
-    className: "media-body",
+    __self: this
+  }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 132
     },
-    __self: undefined
-  }, __jsx("h3", {
+    __self: this
+  }, "Summer Cooking"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 133
     },
-    __self: undefined
-  }, "00 (440) 9865 562"), __jsx("p", {
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 134
     },
-    __self: undefined
-  }, "Mon to Fri 9am to 6pm"))), __jsx("div", {
-    className: "media contact-info",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 137
-    },
-    __self: undefined
-  }, __jsx("span", {
-    className: "contact-info__icon",
+    __self: this
+  }, "$40.00")))), __jsx("div", {
+    className: "col-sm-6 col-lg-6",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 138
     },
-    __self: undefined
-  }, __jsx("i", {
-    className: "ti-email",
+    __self: this
+  }, __jsx("div", {
+    className: "single_food_item media",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 139
     },
-    __self: undefined
-  })), __jsx("div", {
-    className: "media-body",
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_4.png",
+    className: "mr-3",
+    alt: "...",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 140
     },
-    __self: undefined
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 145
+    },
+    __self: this
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 146
     },
-    __self: undefined
-  }, "support@colorlib.com"), __jsx("p", {
+    __self: this
+  }, "Easter Delight"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 147
     },
-    __self: undefined
-  }, "Send us your query anytime!")))))))));
-};
-
-Contact.getInitialProps = async function () {
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("http://localhost:4000/contact/");
-  const data = await res.json();
-  return {
-    data
-  };
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Contact);
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 151
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_5.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 152
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 157
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 158
+    },
+    __self: this
+  }, "Tiener Schnitze"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 160
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 163
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_6.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 164
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 169
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 170
+    },
+    __self: this
+  }, "Chicken Roast"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 171
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 172
+    },
+    __self: this
+  }, "$40.00")))))), __jsx("div", {
+    className: "tab-pane fade single-member",
+    id: "Breakfast",
+    role: "tabpanel",
+    "aria-labelledby": "Breakfast-tab",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 178
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "row",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 184
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "col-sm-6 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 185
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 186
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_4.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 187
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 192
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 193
+    },
+    __self: this
+  }, "Easter Delight"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 194
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 195
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 198
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_5.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 199
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 204
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 205
+    },
+    __self: this
+  }, "Tiener Schnitze"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 206
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 207
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 210
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_6.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 211
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 216
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 217
+    },
+    __self: this
+  }, "Chicken Roast"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 218
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 219
+    },
+    __self: this
+  }, "$40.00")))), __jsx("div", {
+    className: "col-sm-6 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 223
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 224
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_1.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 225
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 230
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 231
+    },
+    __self: this
+  }, "Pork Sandwich"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 232
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 233
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 236
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_2.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 237
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 242
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 243
+    },
+    __self: this
+  }, "Roasted Marrow"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 244
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 245
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 248
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_3.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 249
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 254
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 255
+    },
+    __self: this
+  }, "Summer Cooking"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 256
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 257
+    },
+    __self: this
+  }, "$40.00")))))), __jsx("div", {
+    className: "tab-pane fade single-member",
+    id: "Launch",
+    role: "tabpanel",
+    "aria-labelledby": "Launch-tab",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 263
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "row",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 269
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "col-sm-6 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 270
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 271
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_1.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 272
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 277
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 278
+    },
+    __self: this
+  }, "Pork Sandwich"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 279
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 280
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 283
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_2.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 284
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 289
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 290
+    },
+    __self: this
+  }, "Roasted Marrow"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 291
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 292
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 295
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_3.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 296
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 301
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 302
+    },
+    __self: this
+  }, "Summer Cooking"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 303
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 304
+    },
+    __self: this
+  }, "$40.00")))), __jsx("div", {
+    className: "col-sm-6 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 308
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 309
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_4.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 310
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 315
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 316
+    },
+    __self: this
+  }, "Easter Delight"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 317
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 318
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 321
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_5.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 322
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 327
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 328
+    },
+    __self: this
+  }, "Tiener Schnitze"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 329
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 330
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 333
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_6.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 334
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 339
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 340
+    },
+    __self: this
+  }, "Chicken Roast"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 341
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 342
+    },
+    __self: this
+  }, "$40.00")))))), __jsx("div", {
+    className: "tab-pane fade single-member",
+    id: "Dinner",
+    role: "tabpanel",
+    "aria-labelledby": "Dinner-tab",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 348
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "row",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 354
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "col-sm-6 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 355
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 356
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_4.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 357
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 362
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 363
+    },
+    __self: this
+  }, "Easter Delight"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 364
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 365
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 368
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_5.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 369
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 374
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 375
+    },
+    __self: this
+  }, "Tiener Schnitze"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 376
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 377
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 380
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_6.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 381
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 386
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 387
+    },
+    __self: this
+  }, "Chicken Roast"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 388
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 389
+    },
+    __self: this
+  }, "$40.00")))), __jsx("div", {
+    className: "col-sm-6 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 393
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 394
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_1.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 395
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 400
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 401
+    },
+    __self: this
+  }, "Pork Sandwich"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 402
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 403
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 406
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_2.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 407
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 412
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 413
+    },
+    __self: this
+  }, "Roasted Marrow"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 414
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 415
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 418
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_3.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 419
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 424
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 425
+    },
+    __self: this
+  }, "Summer Cooking"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 426
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 427
+    },
+    __self: this
+  }, "$40.00")))))), __jsx("div", {
+    className: "tab-pane fade single-member",
+    id: "Sneaks",
+    role: "tabpanel",
+    "aria-labelledby": "Sneaks-tab",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 433
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "row",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 439
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "col-sm-6 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 440
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 441
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_1.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 442
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 447
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 448
+    },
+    __self: this
+  }, "Pork Sandwich"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 449
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 450
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 453
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_2.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 454
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 459
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 460
+    },
+    __self: this
+  }, "Roasted Marrow"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 461
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 462
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 465
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_3.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 466
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 471
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 472
+    },
+    __self: this
+  }, "Summer Cooking"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 473
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 474
+    },
+    __self: this
+  }, "$40.00")))), __jsx("div", {
+    className: "col-sm-6 col-lg-6",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 478
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 479
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_4.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 480
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 485
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 486
+    },
+    __self: this
+  }, "Easter Delight"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 487
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 488
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 491
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_5.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 492
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 497
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 498
+    },
+    __self: this
+  }, "Tiener Schnitze"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 499
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 500
+    },
+    __self: this
+  }, "$40.00"))), __jsx("div", {
+    className: "single_food_item media",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 503
+    },
+    __self: this
+  }, __jsx("img", {
+    src: "img/food_menu/single_food_6.png",
+    className: "mr-3",
+    alt: "...",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 504
+    },
+    __self: this
+  }), __jsx("div", {
+    className: "media-body align-self-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 509
+    },
+    __self: this
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 510
+    },
+    __self: this
+  }, "Chicken Roast"), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 511
+    },
+    __self: this
+  }, "They're wherein heaven seed hath nothing"), __jsx("h5", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 512
+    },
+    __self: this
+  }, "$40.00"))))))))))), __jsx("section", {
+    className: "intro_video_bg",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 526
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "container",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 527
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "row",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 528
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "col-lg-12",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 529
+    },
+    __self: this
+  }, __jsx("div", {
+    className: "intro_video_iner text-center",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 530
+    },
+    __self: this
+  }, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 531
+    },
+    __self: this
+  }, "Expect The Best"), __jsx("div", {
+    className: "intro_video_icon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 532
+    },
+    __self: this
+  }, __jsx("a", {
+    id: "play-video_1",
+    className: "video-play-button popup-youtube",
+    href: "https://www.youtube.com/watch?v=pBFQdxA-apI",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 533
+    },
+    __self: this
+  }, __jsx("span", {
+    className: "ti-control-play",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 538
+    },
+    __self: this
+  })))))))));
+}
 
 /***/ }),
 
-/***/ 5:
-/*!********************************!*\
-  !*** multi ./pages/contact.js ***!
-  \********************************/
+/***/ 8:
+/*!*****************************!*\
+  !*** multi ./pages/menu.js ***!
+  \*****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/ducthien/Desktop/Dingo-ProjectReact/pages/contact.js */"./pages/contact.js");
+module.exports = __webpack_require__(/*! /Users/ducthien/Desktop/Dingo-ProjectReact/pages/menu.js */"./pages/menu.js");
 
 
 /***/ }),
@@ -3023,17 +4291,6 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
-
-/***/ }),
-
-/***/ "isomorphic-unfetch":
-/*!*************************************!*\
-  !*** external "isomorphic-unfetch" ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
@@ -3115,4 +4372,4 @@ module.exports = require("url");
 /***/ })
 
 /******/ });
-//# sourceMappingURL=contact.js.map
+//# sourceMappingURL=menu.js.map

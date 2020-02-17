@@ -2,11 +2,11 @@ import Layout from "../components/Layout";
 import fetch from "isomorphic-unfetch";
 
 const Chefs = props => {
-  const title = props.data[0].title;
+  const pageTitle = props.data[0].title;
   const chefTeam = props.data[0].team;
 
   return (
-    <Layout title="Chefs">
+    <Layout title={pageTitle}>
       {/* breadcrumb start*/}
       <section className="breadcrumb breadcrumb_bg">
         <div className="container">
@@ -14,7 +14,7 @@ const Chefs = props => {
             <div className="col-lg-12">
               <div className="breadcrumb_iner text-center">
                 <div className="breadcrumb_iner_item">
-                  <h2>{title}</h2>
+                  <h2>{pageTitle}</h2>
                 </div>
               </div>
             </div>
