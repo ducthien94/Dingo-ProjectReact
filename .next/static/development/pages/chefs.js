@@ -11494,7 +11494,7 @@ Chefs.getInitialProps = function _callee() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!*******************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fchefs&absolutePagePath=%2FUsers%2Fducthien%2FDesktop%2FDingo-ProjectReact%2Fpages%2Fchefs.js ***!
   \*******************************************************************************************************************************************/
@@ -11517,5 +11517,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=chefs.js.map

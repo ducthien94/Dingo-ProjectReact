@@ -263,7 +263,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_1.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Pork Sandwich</h3>
@@ -275,7 +275,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_2.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Roasted Marrow</h3>
@@ -287,7 +287,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_3.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Summer Cooking</h3>
@@ -301,7 +301,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_4.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Easter Delight</h3>
@@ -313,7 +313,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_5.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Tiener Schnitze</h3>
@@ -325,7 +325,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_6.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Chicken Roast</h3>
@@ -348,7 +348,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_4.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Easter Delight</h3>
@@ -360,7 +360,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_5.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Tiener Schnitze</h3>
@@ -372,7 +372,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_6.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Chicken Roast</h3>
@@ -386,7 +386,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_1.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Pork Sandwich</h3>
@@ -398,7 +398,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_2.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Roasted Marrow</h3>
@@ -410,7 +410,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_3.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Summer Cooking</h3>
@@ -433,7 +433,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_1.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Pork Sandwich</h3>
@@ -445,7 +445,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_2.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Roasted Marrow</h3>
@@ -457,7 +457,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_3.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Summer Cooking</h3>
@@ -471,7 +471,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_4.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Easter Delight</h3>
@@ -483,7 +483,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_5.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Tiener Schnitze</h3>
@@ -495,7 +495,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_6.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Chicken Roast</h3>
@@ -518,7 +518,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_4.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Easter Delight</h3>
@@ -530,7 +530,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_5.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Tiener Schnitze</h3>
@@ -542,7 +542,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_6.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Chicken Roast</h3>
@@ -556,7 +556,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_1.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Pork Sandwich</h3>
@@ -568,7 +568,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_2.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Roasted Marrow</h3>
@@ -580,7 +580,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_3.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Summer Cooking</h3>
@@ -603,7 +603,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_1.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Pork Sandwich</h3>
@@ -615,7 +615,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_2.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Roasted Marrow</h3>
@@ -627,7 +627,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_3.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Summer Cooking</h3>
@@ -641,7 +641,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_4.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Easter Delight</h3>
@@ -653,7 +653,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_5.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Tiener Schnitze</h3>
@@ -665,7 +665,7 @@ export default function Index() {
                             <img
                               src="/img/food_menu/single_food_6.png"
                               className="mr-3"
-                              alt="..."
+                              alt
                             />
                             <div className="media-body align-self-center">
                               <h3>Chicken Roast</h3>
