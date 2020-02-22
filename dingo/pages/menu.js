@@ -1,8 +1,14 @@
 import Layout from "../components/Layout";
+import { useRouter } from "next/router";
+import Link from "next/link";
+import FoodMenu from "../components/FoodMenu";
 
-export default function Menu() {
+const Menu = props => {
+  const title = props.data.title;
+  const foodMenu = props.data.foodMenu;
+
   return (
-    <Layout title="Menu">
+    <Layout title={title}>
       {/* breadcrumb start*/}
       <section className="breadcrumb breadcrumb_bg">
         <div className="container">
@@ -10,7 +16,7 @@ export default function Menu() {
             <div className="col-lg-12">
               <div className="breadcrumb_iner text-center">
                 <div className="breadcrumb_iner_item">
-                  <h2>Food Menu</h2>
+                  <h2>{title}</h2>
                 </div>
               </div>
             </div>
@@ -35,59 +41,39 @@ export default function Menu() {
                 id="myTab"
                 role="tablist"
               >
-                <a
-                  className="active"
-                  id="Special-tab"
-                  data-toggle="tab"
-                  href="#Special"
-                  role="tab"
-                  aria-controls="Special"
-                  aria-selected="false"
-                >
-                  Special <img src="img/icon/play.svg" alt="play" />
-                </a>
-                <a
-                  id="Breakfast-tab"
-                  data-toggle="tab"
-                  href="#Breakfast"
-                  role="tab"
-                  aria-controls="Breakfast"
-                  aria-selected="false"
-                >
-                  Breakfast <img src="img/icon/play.svg" alt="play" />
-                </a>
-                <a
-                  id="Launch-tab"
-                  data-toggle="tab"
-                  href="#Launch"
-                  role="tab"
-                  aria-controls="Launch"
-                  aria-selected="false"
-                >
-                  Launch <img src="img/icon/play.svg" alt="play" />
-                </a>
-                <a
-                  id="Dinner-tab"
-                  data-toggle="tab"
-                  href="#Dinner"
-                  role="tab"
-                  aria-controls="Dinner"
-                  aria-selected="false"
-                >
-                  Dinner <img src="img/icon/play.svg" alt="play" />{" "}
-                </a>
-                <a
-                  id="Sneaks-tab"
-                  data-toggle="tab"
-                  href="#Sneaks"
-                  role="tab"
-                  aria-controls="Sneaks"
-                  aria-selected="false"
-                >
-                  Sneaks <img src="img/icon/play.svg" alt="play" />
-                </a>
+                {foodMenu.map((food, index) => {
+                  return (
+                    
+                    // <a
+                    //   key={index}
+                    //   className={
+                    //     useRouter().pathname + food.pathName ===
+                    //     food.pathNameFoodCategory
+                    //       ? "active"
+                    //       : null
+                    //   }
+                    //   id={food.idFoodCategory}
+                    //   data-toggle="tab"
+                    //   href={food.pathName}
+                    //   role="tab"
+                    //   aria-controls={food.foodCategory}
+                    //   aria-selected="false"
+                    // >
+                    //   {food.foodCategory}{" "}
+                    //   <img src="img/icon/play.svg" alt="play" />
+                    // </a>  
+
+                  <FoodMenu key={index} food={food} />
+                    
+                    
+                    
+                    );
+                })}
+
+                
               </div>
             </div>
+
             <div className="col-lg-12">
               <div className="tab-content" id="myTabContent">
                 <div
@@ -546,4 +532,15 @@ export default function Menu() {
       {/* intro_video_bg part start*/}
     </Layout>
   );
-}
+};
+
+Menu.getInitialProps = async function() {
+  const res = await fetch("http://localhost:4000/menu/1");
+  const data = await res.json();
+
+  return {
+    data
+  };
+};
+
+export default Menu;
