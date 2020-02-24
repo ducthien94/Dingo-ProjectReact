@@ -3,9 +3,9 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import FoodMenu from "../components/FoodMenu";
 
-const Menu = props => {
-  const title = props.data.title;
-  const foodMenu = props.data.foodMenu;
+const Menu = ({ infoPage, data }) => {
+  const title = infoPage.title;
+  const foodMenu = data;
 
   return (
     <Layout title={title}>
@@ -63,6 +63,8 @@ const Menu = props => {
                     //   <img src="img/icon/play.svg" alt="play" />
                     // </a>  
 
+                    
+
                   <FoodMenu key={index} food={food} />
                     
                     
@@ -76,7 +78,7 @@ const Menu = props => {
 
             <div className="col-lg-12">
               <div className="tab-content" id="myTabContent">
-                <div
+                {/* <div
                   className="tab-pane fade show active single-member"
                   id="Special"
                   role="tabpanel"
@@ -160,7 +162,7 @@ const Menu = props => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div
                   className="tab-pane fade single-member"
                   id="Breakfast"
@@ -536,10 +538,12 @@ const Menu = props => {
 
 Menu.getInitialProps = async function() {
   const res = await fetch("http://localhost:4000/menu/1");
-  const data = await res.json();
+  const res2 = await fetch("http://localhost:4000/foodMenu");
+  const infoPage = await res.json();
+  const data = await res2.json();
 
   return {
-    data
+    infoPage, data
   };
 };
 

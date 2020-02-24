@@ -12,8 +12,8 @@ import Link from "next/link";
 
 export default ({ food }) => (
   <>
-    <Link href={`/menu?id=${food.foodCategory}`}>
-      <a>{food.foodCategory}</a>
+    <Link href={`/food-menu?id=${food.id}`}>
+      <a>{food.category}</a>
     </Link>
   </>
 );
