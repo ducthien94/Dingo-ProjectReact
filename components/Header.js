@@ -53,9 +53,9 @@ const Header = () => (
               </ul>
             </div>
             <div className="menu_btn">
-              <a href="#" className="btn_1 d-none d-sm-block">
+              <a href={`bookTable`} className="btn_1 d-none d-sm-block">
                 book a table
-              </a>
+                </a>
             </div>
           </nav>
         </div>

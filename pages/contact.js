@@ -1,11 +1,9 @@
 import Layout from "../components/Layout";
 import fetch from "isomorphic-unfetch";
 
-const Contact = props => {
-  const pageTitle = props.data[0].title;
-  
+export default function Contact() {
   return (
-    <Layout title={pageTitle}>
+    <Layout>
       <div>
         {/* breadcrumb start*/}
         <section className="breadcrumb breadcrumb_bg">
@@ -14,7 +12,7 @@ const Contact = props => {
               <div className="col-lg-12">
                 <div className="breadcrumb_iner text-center">
                   <div className="breadcrumb_iner_item">
-                    <h2>{pageTitle}</h2>
+                    <h2>Contact</h2>
                   </div>
                 </div>
               </div>
@@ -152,14 +150,3 @@ const Contact = props => {
     </Layout>
   );
 };
-
-Contact.getInitialProps = async function() {
-  const res = await fetch("http://localhost:4000/contact/");
-  const data = await res.json();
-
-  return {
-    data
-  };
-};
-
-export default Contact;

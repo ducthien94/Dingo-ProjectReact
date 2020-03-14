@@ -1,27 +1,10 @@
 import Layout from "../components/Layout";
 import fetch from "isomorphic-unfetch";
-
-const Chefs = props => {
-  const pageTitle = props.data[0].title;
-  const chefTeam = props.data[0].team;
-
+import firebase from '../firebase'
+const Chefs = ({chefs}) => {
+  console.log(chefs)
   return (
-    <Layout title={pageTitle}>
-      {/* breadcrumb start*/}
-      <section className="breadcrumb breadcrumb_bg">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="breadcrumb_iner text-center">
-                <div className="breadcrumb_iner_item">
-                  <h2>{pageTitle}</h2>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* breadcrumb start*/}
+    <Layout>
       {/*::chefs_part start::*/}
       <section className="chefs_part blog_item_section section_padding">
         <div className="container">
@@ -34,42 +17,12 @@ const Chefs = props => {
             </div>
           </div>
           <div className="row">
-            {/* <div className="col-sm-6 col-lg-4">
-              <div className="single_blog_item">
-                <div className="single_blog_img">
-                  <img src="img/team/chefs_1.png" alt />
-                </div>
-                <div className="single_blog_text text-center">
-                  <h3>Adam Billiard</h3>
-                  <p>Chef Master</p>
-                  <div className="social_icon">
-                    <a href="#">
-                      {" "}
-                      <i className="ti-facebook" />{" "}
-                    </a>
-                    <a href="#">
-                      {" "}
-                      <i className="ti-twitter-alt" />{" "}
-                    </a>
-                    <a href="#">
-                      {" "}
-                      <i className="ti-instagram" />{" "}
-                    </a>
-                    <a href="#">
-                      {" "}
-                      <i className="ti-skype" />{" "}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div> */}
-
-            {chefTeam.map((chef, index) => {
+            {chefs.map(chef => {
               return (
-                <div key={index} className="col-sm-6 col-lg-4">
+                <div key={chef.id} className="col-sm-6 col-lg-4">
                 <div className="single_blog_item">
                   <div className="single_blog_img">
-                    <img src={chef.srcImg} alt={chef.name} />
+                    <img src={chef.avatar} alt={chef.name} />
                   </div>
                   <div className="single_blog_text text-center">
                     <h3>{chef.name}</h3>
@@ -97,65 +50,6 @@ const Chefs = props => {
               </div>
               )
             })}
-
-            {/* <div className="col-sm-6 col-lg-4">
-              <div className="single_blog_item">
-                <div className="single_blog_img">
-                  <img src="img/team/chefs_2.png" alt />
-                </div>
-                <div className="single_blog_text text-center">
-                  <h3>Fred Macyard</h3>
-                  <p>Chef Master</p>
-                  <div className="social_icon">
-                    <a href="#">
-                      {" "}
-                      <i className="ti-facebook" />{" "}
-                    </a>
-                    <a href="#">
-                      {" "}
-                      <i className="ti-twitter-alt" />{" "}
-                    </a>
-                    <a href="#">
-                      {" "}
-                      <i className="ti-instagram" />{" "}
-                    </a>
-                    <a href="#">
-                      {" "}
-                      <i className="ti-skype" />{" "}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6 col-lg-4">
-              <div className="single_blog_item">
-                <div className="single_blog_img">
-                  <img src="img/team/chefs_3.png" alt />
-                </div>
-                <div className="single_blog_text text-center">
-                  <h3>Justin Stuard</h3>
-                  <p>Chef Master</p>
-                  <div className="social_icon">
-                    <a href="#">
-                      {" "}
-                      <i className="ti-facebook" />{" "}
-                    </a>
-                    <a href="#">
-                      {" "}
-                      <i className="ti-twitter-alt" />{" "}
-                    </a>
-                    <a href="#">
-                      {" "}
-                      <i className="ti-instagram" />{" "}
-                    </a>
-                    <a href="#">
-                      {" "}
-                      <i className="ti-skype" />{" "}
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div> */}
             <div className="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
               <div className="single_blog_item">
                 <div className="single_blog_img">
@@ -216,12 +110,19 @@ const Chefs = props => {
 }
 
 Chefs.getInitialProps = async function() {
-  const res = await fetch('http://localhost:4000/chefs');
-  const data = await res.json();
+  let chef = await firebase.firestore().collection("chefs").limit(3).get()
+    .then(snapshot => {
+      let arrData = [];
+      snapshot.forEach(doc => {
+        arrData.push({ id: doc.id, ...doc.data() });
+      });
+      return arrData;
+    })
 
-  return {
-    data
-  };
+    .catch(() => {
+      return [];
+    });
+  return { chefs: chef};
 };
 
 export default Chefs;

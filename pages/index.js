@@ -1,6 +1,8 @@
 import Layout from "../components/Layout";
+import firebase from "../firebase";
+import Reservation from "../components/reservation_form"
 
-export default function Index() {
+const Index = ({ chefs }) => {
   return (
     <>
       <div>
@@ -23,16 +25,16 @@ export default function Index() {
                       <div className="banner_btn">
                         <div className="banner_btn_iner">
                           <a href="#" className="btn_2">
-                            Reservation <img src="/img/icon/left_1.svg" alt />
+                            Reservation <img src="/img/icon/left_1.svg" alt="icon" />
                           </a>
                         </div>
                         <a
                           target="_blank"
                           href="https://www.youtube.com/watch?v=_Up9g2iRkxE"
-                          className="popup-youtube video_popup"
+                          className="popup-youtube video_popup" alt="true"
                         >
                           <span>
-                            <img src="/img/icon/play.svg" alt />
+                            <img src="/img/icon/play.svg" alt="true" />
                           </span>{" "}
                           Watch our story
                         </a>
@@ -59,7 +61,7 @@ export default function Index() {
                 <div className="col-sm-6 col-lg-4">
                   <div className="single_blog_item">
                     <div className="single_blog_img">
-                      <img src="/img/food_item/food_item_1.png" alt />
+                      <img src="/img/food_item/food_item_1.png" alt="true" />
                     </div>
                     <div className="single_blog_text">
                       <h3>Indian Burger</h3>
@@ -694,223 +696,46 @@ export default function Index() {
                 </div>
               </div>
               <div className="row">
-                <div className="col-sm-6 col-lg-4">
-                  <div className="single_blog_item">
-                    <div className="single_blog_img">
-                      <img src="/img/team/chefs_1.png" alt />
-                    </div>
-                    <div className="single_blog_text text-center">
-                      <h3>Adam Billiard</h3>
-                      <p>Chef Master</p>
-                      <div className="social_icon">
-                        <a href="#">
-                          {" "}
-                          <i className="ti-facebook" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-twitter-alt" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-instagram" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-skype" />{" "}
-                        </a>
+                {chefs.map(chef => (
+                  <div key={chef.id} className="col-sm-6 col-lg-4">
+                    <div className="single_blog_item">
+                      <div className="single_blog_img">
+                        <img src={chef.avatar} alt />
                       </div>
+                      <div className="single_blog_text text-center">
+
+                        <h3>{chef.name}</h3>
+                        <p>{chef.roll}</p>
+                        <div className="social_icon">
+                          <a href="#">
+                            {" "}
+                            <i className="ti-facebook" />{" "}
+                          </a>
+                          <a href="#">
+                            {" "}
+                            <i className="ti-twitter-alt" />{" "}
+                          </a>
+                          <a href="#">
+                            {" "}
+                            <i className="ti-instagram" />{" "}
+                          </a>
+                          <a href="#">
+                            {" "}
+                            <i className="ti-skype" />{" "}
+                          </a>
+                        </div>
+                      </div>
+
+
                     </div>
                   </div>
-                </div>
-                <div className="col-sm-6 col-lg-4">
-                  <div className="single_blog_item">
-                    <div className="single_blog_img">
-                      <img src="/img/team/chefs_2.png" alt />
-                    </div>
-                    <div className="single_blog_text text-center">
-                      <h3>Fred Macyard</h3>
-                      <p>Chef Master</p>
-                      <div className="social_icon">
-                        <a href="#">
-                          {" "}
-                          <i className="ti-facebook" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-twitter-alt" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-instagram" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-skype" />{" "}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-6 col-lg-4">
-                  <div className="single_blog_item">
-                    <div className="single_blog_img">
-                      <img src="/img/team/chefs_3.png" alt />
-                    </div>
-                    <div className="single_blog_text text-center">
-                      <h3>Justin Stuard</h3>
-                      <p>Chef Master</p>
-                      <div className="social_icon">
-                        <a href="#">
-                          {" "}
-                          <i className="ti-facebook" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-twitter-alt" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-instagram" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-skype" />{" "}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-6 col-lg-4 d-none d-sm-block d-lg-none">
-                  <div className="single_blog_item">
-                    <div className="single_blog_img">
-                      <img src="/img/team/chefs_1.png" alt />
-                    </div>
-                    <div className="single_blog_text text-center">
-                      <h3>Justin Stuard</h3>
-                      <p>Chef Master</p>
-                      <div className="social_icon">
-                        <a href="#">
-                          {" "}
-                          <i className="ti-facebook" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-twitter-alt" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-instagram" />{" "}
-                        </a>
-                        <a href="#">
-                          {" "}
-                          <i className="ti-skype" />{" "}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </section>
           {/*::chefs_part end::*/}
           {/*::regervation_part start::*/}
-          <section className="regervation_part section_padding">
-            <div className="container">
-              <div className="row">
-                <div className="col-xl-5">
-                  <div className="section_tittle">
-                    <p>Reservation</p>
-                    <h2>Book A Table</h2>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-lg-6">
-                  <div className="regervation_part_iner">
-                    <form>
-                      <div className="form-row">
-                        <div className="form-group col-md-6">
-                          <input
-                            type="email"
-                            className="form-control"
-                            id="inputEmail4"
-                            placeholder="Name *"
-                          />
-                        </div>
-                        <div className="form-group col-md-6">
-                          <input
-                            type="password"
-                            className="form-control"
-                            id="inputPassword4"
-                            placeholder="Email address *"
-                          />
-                        </div>
-                        <div className="form-group col-md-6">
-                          <select className="form-control" id="Select">
-                            <option value={1} selected>
-                              Persons *
-                            </option>
-                            <option value={2}>Number of guests 1</option>
-                            <option value={3}>Number of guests 2</option>
-                            <option value={4}>Number of guests 3</option>
-                            <option value={5}>Number of guests 4</option>
-                          </select>
-                        </div>
-                        <div className="form-group col-md-6">
-                          <input
-                            type="text"
-                            className="form-control"
-                            id="pnone"
-                            placeholder="Phone number *"
-                          />
-                        </div>
-                        <div className="form-group col-md-6">
-                          <div className="input-group date">
-                            <input
-                              id="datepicker"
-                              type="text"
-                              className="form-control"
-                              placeholder="Date *"
-                            />
-                          </div>
-                        </div>
-                        <div className="form-group col-md-6">
-                          <select className="form-control" id="Select2">
-                            <option value selected>
-                              Time *
-                            </option>
-                            <option value={1}>8 AM TO 10AM</option>
-                            <option value={1}>10 AM TO 12PM</option>
-                            <option value={1}>12PM TO 2PM</option>
-                            <option value={1}>2PM TO 4PM</option>
-                            <option value={1}>4PM TO 6PM</option>
-                            <option value={1}>6PM TO 8PM</option>
-                            <option value={1}>4PM TO 10PM</option>
-                            <option value={1}>10PM TO 12PM</option>
-                          </select>
-                        </div>
-                        <div className="form-group col-md-12">
-                          <textarea
-                            className="form-control"
-                            id="Textarea"
-                            rows={4}
-                            placeholder="Your Note *"
-                            defaultValue={""}
-                          />
-                        </div>
-                      </div>
-                      <div className="regerv_btn">
-                        <a href="#" className="btn_4">
-                          Book A Table
-                        </a>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <Reservation />
           {/*::regervation_part end::*/}
           {/*::review_part start::*/}
           <section className="review_part gray_bg section_padding">
@@ -1107,4 +932,40 @@ export default function Index() {
       </div>
     </>
   );
-}
+};
+Index.getInitialProps = async function () {
+  let menu = await firebase
+    .firestore()
+    .collection("foods")
+    .limit(3)
+    .orderBy("title", "asc")
+    .get()
+    .then(snapshot => {
+      let arrData = [];
+      snapshot.forEach(doc => {
+        arrData.push({ id: doc.id, ...doc.data() });
+      });
+      return arrData;
+    });
+  let chef = await firebase
+    .firestore()
+    .collection("chefs")
+    .limit(3)
+    .get()
+    .then(snapshot => {
+      let arrData = [];
+      snapshot.forEach(doc => {
+        arrData.push({ id: doc.id, ...doc.data() });
+      });
+      return arrData;
+    })
+
+    .catch(() => {
+      return [];
+    });
+  return {
+    foods: menu,
+    chefs: chef
+  };
+};
+export default Index;
