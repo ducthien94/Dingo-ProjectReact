@@ -1,0 +1,323 @@
+{
+  "chefs":[
+    {
+      "id": 1,
+      "avatar":"",
+      "name": "Fred Macyard",
+      "roll": "Head Chef"
+    },
+    {
+      "id": 2,
+      "avatar":"",
+      "name": "Adam Billiard",
+      "roll": "Pastry Chef"
+    },
+    {
+      "id": 3,
+      "avatar":"",
+      "name": "Justin Stuard",
+      "roll": "Sous Chef"
+    },
+    {
+      "id": 4,
+      "avatar":"",
+      "name": "Stuard Justin",
+      "roll": "Saucier"
+    }
+  ],
+  "foods": [
+    {
+      "id": 1,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "title": "Pork Sandwich",
+      "intro": "They're wherein heaven seed hath nothing",
+      "price": 40,
+      "catagory": "Launch"
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "title": "Easter Delight",
+      "intro": "They're wherein heaven seed hath nothing",
+      "price": 54,
+      "catagory": "Dinner"
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "title": "Roasted Marrow",
+      "intro": "They're wherein heaven seed hath nothing",
+      "price": 44,
+      "catagory": "Sneaks"
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "title": "Tiener Schnitze",
+      "intro": "They're wherein heaven seed hath nothing",
+      "price": 65,
+      "catagory": "Special"
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "title": "Summer Cooking",
+      "intro": "They're wherein heaven seed hath nothing",
+      "price": 12,
+      "catagory": "Breakfast"
+    },
+    {
+      "id": 6,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "title": "Chicken Roast",
+      "intro": "They're wherein heaven seed hath nothing",
+      "price": 52,
+      "catagory": "Breakfast"
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Mar 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Healthy Care"
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/1O1KC1wTKTskFlseYbws_0S9A6432.jpg?alt=media&token=eca3cef9-839f-454a-b429-2139300949a7",
+      "date": "May 22 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Travel"
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/AQkX6bvQwGirGmRdr4KV_0S9A9368.jpg?alt=media&token=3604d8ce-5f35-4730-81b1-381e4e61a1af",
+      "date": "Sep 20 2019",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Travel"
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/VPeSMiYHRce4BWsyj7Nl_0S9A5582.jpg?alt=media&token=35724733-b991-4686-8329-e8cdfc6370a5",
+      "date": "Feb 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Inpiration"
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/MwuCd6HpQ5mDvn4OLRkA_0S9A9886.jpg?alt=media&token=d593d6a5-6caf-48eb-8218-dc41d52df894",
+      "date": "Jan 30 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Inpiration"
+    },
+    {
+      "id": 6,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Sep 01 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Alex",
+      "comment": "03",
+      "category": "Travel"
+    },
+    {
+      "id": 7,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Jan 03 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Nam",
+      "comment": "03",
+      "category": "Inpiration"
+    },
+    {
+      "id": 8,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Mar 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Beri",
+      "comment": "03",
+      "category": "Modern technology"
+    },
+    {
+      "id": 9,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Mar 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Products"
+    },
+    {
+      "id": 10,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Mar 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Eric",
+      "comment": "03",
+      "category": "Restaurant Food"
+    },
+    {
+      "id": 11,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Mar 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Alise",
+      "comment": "03",
+      "category": "Inpiration"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "category": "Healthy Care"
+    },
+    {
+      "id": 2,
+      "category": "Restaurant Food"
+    },
+    {
+      "id": 3,
+      "category": "Products"
+    },
+    {
+      "id": 4,
+      "category": "Inpiration"
+    },
+    {
+      "id": 5,
+      "category": "Travel"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "content":"",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Healthy Care"
+    },
+    {
+      "id": 2,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/1O1KC1wTKTskFlseYbws_0S9A6432.jpg?alt=media&token=eca3cef9-839f-454a-b429-2139300949a7",
+      "date": "May 22 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Travel"
+    },
+    {
+      "id": 3,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/AQkX6bvQwGirGmRdr4KV_0S9A9368.jpg?alt=media&token=3604d8ce-5f35-4730-81b1-381e4e61a1af",
+      "date": "Sep 20 2019",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Travel"
+    },
+    {
+      "id": 4,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/VPeSMiYHRce4BWsyj7Nl_0S9A5582.jpg?alt=media&token=35724733-b991-4686-8329-e8cdfc6370a5",
+      "date": "Feb 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Inpiration"
+    },
+    {
+      "id": 5,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/MwuCd6HpQ5mDvn4OLRkA_0S9A9886.jpg?alt=media&token=d593d6a5-6caf-48eb-8218-dc41d52df894",
+      "date": "Jan 30 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Inpiration"
+    },
+    {
+      "id": 6,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Sep 01 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Alex",
+      "comment": "03",
+      "category": "Travel"
+    },
+    {
+      "id": 7,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Jan 03 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Nam",
+      "comment": "03",
+      "category": "Inpiration"
+    },
+    {
+      "id": 8,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Mar 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Beri",
+      "comment": "03",
+      "category": "Modern technology"
+    },
+    {
+      "id": 9,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Mar 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Maria",
+      "comment": "03",
+      "category": "Products"
+    },
+    {
+      "id": 10,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Mar 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Eric",
+      "comment": "03",
+      "category": "Restaurant Food"
+    },
+    {
+      "id": 11,
+      "thumbnail": "https://firebasestorage.googleapis.com/v0/b/dingo-4c047.appspot.com/o/zbOVaZ4MSAO81CYiVyZK_panera-baked-potato-cream-cheese-soup-3763.jpg?alt=media&token=4da46826-a1a6-433f-9533-2cf4b2bcb983",
+      "date": "Mar 12 2020",
+      "title": "EASY & DELICIOUS MEATLOAF",
+      "preview": "I exchanged the ground beef for a mixture of veal, pork and beef. I also followed others' advice and switched to stuffing mix in place of bread.",
+      "author": "Alise",
+      "comment": "03",
+      "category": "Inpiration"
+    }
+  ]
+}
