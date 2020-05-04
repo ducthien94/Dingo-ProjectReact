@@ -4327,3 +4327,19 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+.check_icon{
+  max-width: 10rem;
+  display: block;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#tab{
+  background: none;
+  border: none;
+  margin-right: 20px;
+  
+}
+#tab:hover{
+    color: #ff6426;
+}

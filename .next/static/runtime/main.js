@@ -4797,7 +4797,7 @@ function connect(options) {
       error.name = err.name;
       error.stack = err.stack; // __NEXT_DIST_DIR is provided by webpack
 
-      (0, _sourceMapSupport.rewriteStacktrace)(error, "B:\\Project\\Dingo-ProjectReact\\.next");
+      (0, _sourceMapSupport.rewriteStacktrace)(error, "E:\\Project\\Dingo-ProjectReact\\.next");
       return error;
     }
   };
