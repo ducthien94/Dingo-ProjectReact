@@ -2,8 +2,7 @@ import Layout from "../components/Layout";
 import firebase from "../firebase";
 
 
-const singleBlog = ({ articles, items }) => {
-  
+const singleBlog = ({ articles}) => {
   return (
     <Layout>
       <div>
@@ -78,23 +77,8 @@ singleBlog.getInitialProps = async function(context) {
     .catch(() => {
       return {};
     });
-      let item = await firebase
-        .firestore()
-        .collection("categories")
-        .get()
-        .then(snapshot => {
-          let arrData = [];
-          snapshot.forEach(doc => {
-            arrData.push({ id: doc.id, ...doc.data() });
-          });
-          return arrData;
-        })
-        .catch(() => {
-          return [];
-        });
   return {
-    articles: article[0],
-    items: item
+    articles: article[0]
   };
 };
 

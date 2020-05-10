@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import firebase from "../firebase";
-const getFoods = () => {
+const Food = () => {
   const [food, setFood] = useState([]);
   useEffect(() => {
     firebase
@@ -15,19 +15,20 @@ const getFoods = () => {
         setFood(arrData);
       });
   }, []);
-  return food;
-};
-
-const Food = () => {
-  const foods = getFoods();
-  const [filter, setFilter] = useState([]);
   const Filter = (day) => {
-      setFilter(
-        foods.filter((f) => {
-          return f.catagory === day;
+      firebase
+        .firestore()
+        .collection("foods")
+        .where("catagory", "==", day)
+        .get()
+        .then((snapshot) => {
+          let arrData = [];
+          snapshot.forEach((doc) => {
+            arrData.push({ id: doc.id, ...doc.data() });
+          });
+          setFood(arrData);
         })
-      );
-  };
+  }
   return (
     <section className="food_menu gray_bg">
       <div className="container">
@@ -124,7 +125,7 @@ const Food = () => {
               >
                 <div className="row">
                   <div className="col-sm-6 col-lg-6">
-                    {filter.map((food) => (
+                    {food.map((items) => (
                       <div className="single_food_item media">
                         <img
                           src="img/food_menu/single_food_1.png"
@@ -132,9 +133,9 @@ const Food = () => {
                           alt="..."
                         />
                         <div className="media-body align-self-center">
-                          <h3>{food.title}</h3>
-                          <p>{food.intro}</p>
-                          <h5>${food.price}</h5>
+                          <h3>{items.title}</h3>
+                          <p>{items.intro}</p>
+                          <h5>${items.price}</h5>
                         </div>
                       </div>
                     ))}

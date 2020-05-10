@@ -28,7 +28,6 @@ function getArticles() {
 
 const Blog = () => {
   const articles= getArticles()
-  console.log(articles)
     const [search, setSearch] = useState([]);
     const onSearch = (value) => {
         setSearch(
