@@ -7,13 +7,28 @@ import "moment-timezone";
 import { useEffect, useState } from "react";
 
 
-function getArticles() {
-  const [articles, setArticles] = React.useState([]);
-  useEffect(() => {
+const Blog = () => {
+    const [articles, setArticles] = React.useState([]);
+    useEffect(() => {
+      firebase
+        .firestore()
+        .collection("articles")
+        .orderBy("date", "desc")
+        .get()
+        .then((snapshot) => {
+          let arrData = [];
+          snapshot.forEach((doc) => {
+            arrData.push({ id: doc.id, ...doc.data() });
+          });
+          setArticles(arrData);
+        });
+    }, []);
+
+  const Filter = (day) => {
     firebase
       .firestore()
       .collection("articles")
-      .orderBy("date", "desc")
+      .where("category", "==", day)
       .get()
       .then((snapshot) => {
         let arrData = [];
@@ -22,15 +37,9 @@ function getArticles() {
         });
         setArticles(arrData);
       });
-  }, []);
-  return articles
-}
-
-const Blog = () => {
-  const articles= getArticles()
-    const [search, setSearch] = useState([]);
+  };
     const onSearch = (value) => {
-        setSearch(
+        setArticles(
         articles.filter((items) => {
           return items.title.toLowerCase().indexOf(value.toLowerCase()) !== -1;
         })
@@ -59,7 +68,7 @@ const Blog = () => {
           <div className="row">
             <div className="col-lg-8 mb-5 mb-lg-0">
               <div className="blog_left_sidebar">
-                {search.map((post) => (
+                {articles.map((post) => (
                   <article key={post.id} className="blog_item">
                     <div className="blog_item_img">
                       <img
@@ -150,22 +159,46 @@ const Blog = () => {
                   <h4 className="widget_title">Category</h4>
                   <ul className="list cat-list">
                     <li>
-                      <button id="tab" href="#" className="d-flex">
+                      <button
+                        id="tab"
+                        href="#"
+                        className="d-flex"
+                        onClick={(e) => Filter(e.target.value)}
+                        value="DIY"
+                      >
                         DIY
                       </button>
                     </li>
                     <li>
-                      <button id="tab" href="#" className="d-flex">
+                      <button
+                        id="tab"
+                        href="#"
+                        className="d-flex"
+                        onClick={(e) => Filter(e.target.value)}
+                        value="Restaurant Food"
+                      >
                         Restaurant Food
                       </button>
                     </li>
                     <li>
-                      <button id="tab" href="#" className="d-flex">
+                      <button
+                        id="tab"
+                        href="#"
+                        className="d-flex"
+                        onClick={(e) => Filter(e.target.value)}
+                        value="Hotel Review"
+                      >
                         Hotel Review
                       </button>
                     </li>
                     <li>
-                      <button id="tab" href="#" className="d-flex">
+                      <button
+                        id="tab"
+                        href="#"
+                        className="d-flex"
+                        onClick={(e) => Filter(e.target.value)}
+                        value="Eating Out"
+                      >
                         Eating Out
                       </button>
                     </li>
