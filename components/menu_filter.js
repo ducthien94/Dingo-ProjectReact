@@ -6,6 +6,7 @@ const Food = () => {
     firebase
       .firestore()
       .collection("foods")
+      .limit(3)
       .get()
       .then((snapshot) => {
         let arrData = [];
